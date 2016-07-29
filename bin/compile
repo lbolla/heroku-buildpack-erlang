@@ -7,6 +7,9 @@
 # export variables in <env-dir>
 # see https://devcenter.heroku.com/articles/buildpack-api#bin-compile
 
+# Default stack
+STACK=cedar-14
+
 env_dir=$3
 if [ -d "$env_dir" ]; then
   for e in $(ls $env_dir); do
